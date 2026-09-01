@@ -42,7 +42,7 @@
 
 
 <!-- Main (Home) section -->
-<section class="section" id="head">
+<class="section" id="head">
 	<div class="container">
 
 		<div class="row">
@@ -70,11 +70,10 @@
 
 		<h2 class="text-center title">Centraliser, synthétiser, simplifier</h2>
 		<p class="lead text-center">
-			Huge thank you to all people who publish<br>
-			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
+			De la donnée brute à la synthèse exploitable, sans ressaisie ni copier-coller.
 		</p>
 
-<!-- Ligne 1 : Image à gauche, Texte à droite -->
+<!-- Ligne 1 : Module FSD -->
 <div class="row" style="margin-bottom: 30px;">
     <div class="col-sm-12">
        <div class="thumbnail">
@@ -96,7 +95,7 @@
     </div>
 </div>
 
-<!-- Ligne 2 : Texte à gauche, Image à droite -->
+<!-- Ligne 2 : Module TaxRef -->
 <div class="row" style="margin-bottom: 30px;">
     <div class="col-sm-12">
        <div class="thumbnail">
@@ -107,7 +106,10 @@
              <div class="col-sm-6 col-sm-pull-6">
                 <div class="caption">
                    <h3>Module TaxRef</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+                   <p>Enrichissement taxonomique automatique des espèces via l'API TAXREF de l'INPN. <br>
+					   * Récupération du nom valide, du rang taxonomique et de la position systématique pour chaque code CD_NOM/CD_REF. <br>
+					   * Fiabilisation des listes d'espèces en amont des analyses, pour repartir sur un référentiel taxonomique à jour et harmonisé.
+				   </p>
                 </div>
              </div>
           </div>
@@ -115,7 +117,7 @@
     </div>
 </div>
 
-<!-- Ligne 3 : Image à gauche, Texte à droite -->
+<!-- Ligne 3 : Module BDC -->
 <div class="row" style="margin-bottom: 30px;">
     <div class="col-sm-12">
        <div class="thumbnail">
@@ -126,7 +128,10 @@
              <div class="col-sm-6">
                 <div class="caption">
                    <h3>Module base de connaissance</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+                   <p>Enrichissement automatique des statuts de protection et de conservation des espèces via l'API INPN. <br>
+					   * Ajout des statuts réglementaires (protections nationales, régionales, départementales) et des niveaux de menace des listes rouges (UICN). <br>
+					   * Création de tables de synthèse par groupes taxonomiques. <br>
+				   </p>
                 </div>
              </div>
           </div>
@@ -134,8 +139,8 @@
     </div>
 </div>
 
-<!-- Ligne 4 : Texte à gauche, Image à droite -->
-<div class="row" style="margin-bottom: 30px;">
+<!-- Ligne 4 : Module Botazou -->
+<!-- <div class="row" style="margin-bottom: 30px;">
     <div class="col-sm-12">
        <div class="thumbnail">
           <div class="row">
@@ -145,15 +150,27 @@
              <div class="col-sm-6 col-sm-pull-6">
                 <div class="caption">
                    <h3>Module Botazou</h3>
-                   <p>Regroupement automatisé des espèces de la flore par affinités écologiques (analyses multivariées).</p>
+                   <p>Classification écologique automatisée des espèces de la flore à partir des indices de Julve (Baseflor). <br>
+					   * Analyse multivariée des affinités phytoécologiques (lumière, température, humidité, réaction du sol, niveau trophique...)
+					   pour regrouper les espèces par cortèges. <br>
+					   * Une aide à la lecture des habitats et des successions végétales, directement depuis vos relevés de terrain.
+</p>
                 </div>
              </div>
           </div>
        </div>
     </div>
 </div>
+ -->
 
-</section>
+<div class="container">
+   <div class="row">
+      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+         <p><a href="https://ki-mor.github.io/biblizou/" class="btn btn-default btn-lg" target="_blank" rel="noopener">Consulter la documentation</a></p>
+      </div> <!-- /col -->
+   </div> <!-- /row -->
+</div> <!-- /container : MANQUAIT -->
+</section> <!-- MANQUAIT -->
 
 <!-- Second (About) section -->
 <section class="section" id="about">
