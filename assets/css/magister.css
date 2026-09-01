@@ -1,10 +1,25 @@
 html {
-	background:#505D6E url(../images/body4.jpg) no-repeat center center fixed; 
+	background:#505D6E url(../images/20260723_150936.jpg) no-repeat center center fixed;
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #505D6E;
+}
+
+html::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url(../images/20260723_150936.jpg) no-repeat center center / cover;
+    filter: blur(4px) contrast(1) brightness(1.25);
 }
 
 body {
