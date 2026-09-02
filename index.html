@@ -1,238 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
 
-	<title>Biblizou - Plugin Qgis</title>
+    <title>Biblizou - Plugin Qgis</title>
 
-	<link rel="shortcut icon" href="assets/images/icon_LR.png">
-	
-	<!-- Bootstrap itself -->
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/icon_LR.png">
 
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/magister.css">
+    <!-- Bootstrap itself -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-	<!-- Fonts -->
-	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet" type="text/css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/magister.css">
+
+    <!-- Fonts -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet" type="text/css">
 </head>
 
 <!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
 <body class="theme-invert">
 
 <nav class="mainmenu">
-	<div class="container">
-		<div class="dropdown">
-			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-				<li><a href="#head" class="active">Accueil</a></li>
-				<li><a href="#about">À propos de l'auteur</a></li>
-				<li><a href="#themes">Tutoriels</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="#head" class="active">Accueil</a></li>
+                <li><a href="#about">À propos de l'auteur</a></li>
+                <!-- <li><a href="#themes">Tutoriels</a></li> -->
+                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#licence">Licence</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 
 <!-- Main (Home) section -->
-<class="section" id="head">
-	<div class="container">
+<section class="section" id="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
 
-		<div class="row">
-			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+                <!-- Site Title, your name, HELLO msg, etc. -->
+                <h1 class="title"><img src="assets/images/icon_HR.png" alt="Icone"
+                                       style="height: 0.8em; vertical-align: middle; margin-right: 8px;"> Biblizou</h1>
+                <h2 class="subtitle">Un plugin Qgis</h2>
 
-				<!-- Site Title, your name, HELLO msg, etc. -->
-				<h1 class="title"><img src="assets/images/icon_HR.png" alt="Icone" style="height: 0.8em; vertical-align: middle; margin-right: 8px;"> Biblizou</h1>
-				<h2 class="subtitle">Un plugin Qgis</h2>
+                <!-- Short introductory (optional) -->
+                <h3 class="tagline">
+                    Biblizou est un plugin open-source exploitant les ressources de l'INPN et des SINP régionaux, <br>
+                    destiné à simplifier et centraliser la collecte de données bibliographiques habitats, faune et
+                    flore,<br>
+                    pour les agents du domaine de la biodiversité.
+                </h3>
 
-				<!-- Short introductory (optional) -->
-				<h3 class="tagline">
-					Biblizou est un plugin open-source exploitant les ressources de l'INPN et des SINP régionaux, <br>
-					destiné à simplifier et centraliser la collecte de données bibliographiques habitats, faune et flore,<br>
-					pour les agents du domaine de la biodiversité.
-				</h3>
-				
-				<!-- Nice place to describe your site in a sentence or two -->
-				<p><a href="/download/" class="btn btn-default btn-lg">Download template now</a></p>
-	
-			</div> <!-- /col -->
-		</div> <!-- /row -->
-	
-	</div>
-	<div class="container">
+            </div>
+        </div>
 
-		<h2 class="text-center title">Centraliser, synthétiser, simplifier</h2>
-		<p class="lead text-center">
-			De la donnée brute à la synthèse exploitable, sans ressaisie ni copier-coller.
-		</p>
-
-<!-- Ligne 1 : Module FSD -->
-<div class="row" style="margin-bottom: 30px;">
-    <div class="col-sm-12">
-       <div class="thumbnail">
-          <div class="row">
-             <div class="col-sm-6">
-                <img src="assets/screenshots/sshot6.jpg" alt="" class="img-responsive">
-             </div>
-             <div class="col-sm-6">
-                <div class="caption">
-                   <h3>Module FSD</h3>
-                   <p>Moissonnage automatique des données issues des Formulaires Standards de Données (FSD) des sites ZNIEFF et Natura 2000 intersectant l'aire d'étude choisie. <br>
-                      * Création de tables de synthèse pour les habitats, la faune et la flore par types de zonages du patrimoine naturel. <br>
-                      * Création de tables de synthèse sur les sites Natura 2000 et Znieff, intégrant un champ popup_HTML pour vos rapport et vos atlas !
-                   </p>
-                </div>
-             </div>
-          </div>
-       </div>
     </div>
-</div>
+    <div class="container">
 
-<!-- Ligne 2 : Module TaxRef -->
-<div class="row" style="margin-bottom: 30px;">
-    <div class="col-sm-12">
-       <div class="thumbnail">
-          <div class="row">
-             <div class="col-sm-6 col-sm-push-6">
-                <img src="assets/screenshots/sshot7.jpg" alt="" class="img-responsive">
-             </div>
-             <div class="col-sm-6 col-sm-pull-6">
-                <div class="caption">
-                   <h3>Module TaxRef</h3>
-                   <p>Enrichissement taxonomique automatique des espèces via l'API TAXREF de l'INPN. <br>
-					   * Récupération du nom valide, du rang taxonomique et de la position systématique pour chaque code CD_NOM/CD_REF. <br>
-					   * Fiabilisation des listes d'espèces en amont des analyses, pour repartir sur un référentiel taxonomique à jour et harmonisé.
-				   </p>
+        <h2 class="text-center title">Centraliser, synthétiser, simplifier</h2>
+
+        <!-- Ligne 1 : Module FSD -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="assets/screenshots/sshot6.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="caption">
+                                <h3>Module FSD</h3>
+                                <p>Moissonnage automatique des données issues des Formulaires Standards de Données (FSD)
+                                    des sites ZNIEFF et Natura 2000 intersectant l'aire d'étude choisie. <br>
+                                    * Création de tables de synthèse pour les habitats, la faune et la flore par types
+                                    de zonages du patrimoine naturel. <br>
+                                    * Création de tables de synthèse sur les sites Natura 2000 et Znieff, intégrant un
+                                    champ popup_HTML pour vos rapport et vos atlas !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-          </div>
-       </div>
-    </div>
-</div>
+            </div>
+        </div>
 
-<!-- Ligne 3 : Module BDC -->
-<div class="row" style="margin-bottom: 30px;">
-    <div class="col-sm-12">
-       <div class="thumbnail">
-          <div class="row">
-             <div class="col-sm-6">
-                <img src="assets/screenshots/sshot8.jpg" alt="" class="img-responsive">
-             </div>
-             <div class="col-sm-6">
-                <div class="caption">
-                   <h3>Module base de connaissance</h3>
-                   <p>Enrichissement automatique des statuts de protection et de conservation des espèces via l'API INPN. <br>
-					   * Ajout des statuts réglementaires (protections nationales, régionales, départementales) et des niveaux de menace des listes rouges (UICN). <br>
-					   * Création de tables de synthèse par groupes taxonomiques. <br>
-				   </p>
+        <!-- Ligne 2 : Module TaxRef -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <img src="assets/screenshots/sshot7.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6 col-sm-pull-6">
+                            <div class="caption">
+                                <h3>Module TaxRef</h3>
+                                <p>Enrichissement taxonomique automatique des espèces via l'API TAXREF de l'INPN. <br>
+                                    * Récupération du nom valide, du rang taxonomique et de la position systématique
+                                    pour chaque code CD_NOM/CD_REF. <br>
+                                    * Fiabilisation des listes d'espèces en amont des analyses, pour repartir sur un
+                                    référentiel taxonomique à jour et harmonisé.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-          </div>
-       </div>
-    </div>
-</div>
+            </div>
+        </div>
 
-<!-- Ligne 4 : Module Botazou -->
-<!-- <div class="row" style="margin-bottom: 30px;">
-    <div class="col-sm-12">
-       <div class="thumbnail">
-          <div class="row">
-             <div class="col-sm-6 col-sm-push-6">
-                <img src="assets/screenshots/sshot3.jpg" alt="" class="img-responsive">
-             </div>
-             <div class="col-sm-6 col-sm-pull-6">
-                <div class="caption">
-                   <h3>Module Botazou</h3>
-                   <p>Classification écologique automatisée des espèces de la flore à partir des indices de Julve (Baseflor). <br>
-					   * Analyse multivariée des affinités phytoécologiques (lumière, température, humidité, réaction du sol, niveau trophique...)
-					   pour regrouper les espèces par cortèges. <br>
-					   * Une aide à la lecture des habitats et des successions végétales, directement depuis vos relevés de terrain.
-</p>
+        <!-- Ligne 3 : Module BDC -->
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="assets/screenshots/sshot8.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="caption">
+                                <h3>Module base de connaissance</h3>
+                                <p>Enrichissement automatique des statuts de protection et de conservation des espèces
+                                    via l'API INPN. <br>
+                                    * Ajout des statuts réglementaires (protections nationales, régionales,
+                                    départementales) et des niveaux de menace des listes rouges (UICN). <br>
+                                    * Création de tables de synthèse par groupes taxonomiques. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-          </div>
-       </div>
-    </div>
-</div>
- -->
+            </div>
+        </div>
 
-<div class="container">
-   <div class="row">
-      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
-         <p><a href="https://ki-mor.github.io/biblizou/" class="btn btn-default btn-lg" target="_blank" rel="noopener">Consulter la documentation</a></p>
-      </div> <!-- /col -->
-   </div> <!-- /row -->
-</div> <!-- /container : MANQUAIT -->
-</section> <!-- MANQUAIT -->
+        <!-- Ligne 4 : Module Botazou -->
+        <!-- <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+               <div class="thumbnail">
+                  <div class="row">
+                     <div class="col-sm-6 col-sm-push-6">
+                        <img src="assets/screenshots/sshot3.jpg" alt="" class="img-responsive">
+                     </div>
+                     <div class="col-sm-6 col-sm-pull-6">
+                        <div class="caption">
+                           <h3>Module Botazou</h3>
+                           <p>Classification écologique automatisée des espèces de la flore à partir des indices de Julve (Baseflor). <br>
+                               * Analyse multivariée des affinités phyto-écologiques (lumière, température, humidité, réaction du sol, niveau trophique...)
+                               pour regrouper les espèces par cortèges. <br>
+                               * Une aide à la lecture des habitats et des successions végétales, directement depuis vos relevés de terrain.
+        </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div> -->
+
+        <!-- Documentation-->
+        <div class="container">
+            <h2 class="text-center title">Documentation</h2>
+
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+                    <p><a href="https://ki-mor.github.io/biblizou/" class="btn btn-default btn-lg" target="_blank"
+                          rel="noopener">Consulter la documentation</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installer -->
+        <div class="container">
+            <h2 class="text-center title">Installer le plugin</h2>
+            <p class="lead text-center">
+                C'est tout comme d'habitude !
+            </p>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-sm-12">
+                    <div class="thumbnail">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-push-6">
+                                <div class="caption">
+                                    <h3>Par QGIS</h3>
+                                    <p>Activer <strong>Biblizou</strong> dans <code>Extensions</code> → <code>Gérer et
+                                        installer les
+                                        extensions</code> → <code>Toutes</code>.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-pull-6">
+                                <div class="caption">
+                                    <h3>Par Github</h3>
+                                    <ol>
+                                        <li>Télécharger ou cloner le dépôt.</li>
+                                        <li>Déplacer le dossier <code>biblizou</code> dans le répertoire des extensions
+                                            QGIS :
+                                            <ul>
+                                                <li><strong>Windows</strong> : <code>%APPDATA%\QGIS\QGIS3\profiles\<br>default\python\plugins</code>
+                                                </li>
+                                                <li><strong>Linux</strong> : <code>~/.local/share/QGIS/QGIS3/profiles/default<br>/python/plugins</code>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Activer <strong>Biblizou</strong> dans <code>Extensions</code> → <code>Gérer
+                                            et
+                                            installer les extensions</code> → <code>Installées</code>.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contribuer -->
+        <div class="container">
+            <h2 class="text-center title">Contribuer</h2>
+            <p class="lead text-center">
+                Ce projet est collaboratif, vous pouvez le rejoindre !
+            </p>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-sm-12">
+                    <div class="thumbnail">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-push-6">
+                                <div class="caption">
+                                    <h3>Par QGIS</h3>
+                                    <p>Ouverture d'une <em>Issue</em> pour signaler un bug ou proposer une
+                                        évolution, ou soumission directe d'une <em>Pull Request</em> (PR).</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-pull-6">
+                                <div class="caption">
+                                    <h3>Workflow Git</h3>
+                                    <p>Ouverture d'une <em>Issue</em> pour signaler un bug ou proposer une
+                                        évolution, ou
+                                        soumission directe d'une <em>Pull Request</em> (PR).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-sm-12">
+                    <div class="thumbnail">
+                        <h5 class="text-center"><strong>Contributeurs-ices :</strong></h5>
+                        <p class="text-center">
+                            <a href="https://github.com/Ki-Mor/biblizou/graphs/contributors" target="_blank"
+                               rel="noopener">
+                                <img src="https://contrib.rocks/image?repo=Ki-Mor/biblizou"
+                                     alt="Liste des contributeurs">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <!-- Second (About) section -->
 <section class="section" id="about">
-	<div class="container">
-	
-<h2 class="text-center title"><span style="display: inline-block; width: 1em; height: 1em; border-radius: 50%; overflow: hidden; vertical-align: -0.15em; margin-right: 8px;"><img src="assets/images/botcazou.jpg" alt="Icone" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.25);"></span>À propos de moi</h2>		<div class="col-sm-4 col-sm-offset-2">
-			<h5><strong>Qui suis-je ?<br></strong></h5>
-				<p>François Botcazou, écologue-botaniste et géo-bricoleur,
-					artisan de petits programmes pour améliorer mon quotidien.
-					Ma maîtrise de Qgis s'est construite en parallèle de mon parcours d’écologue-botaniste
-					et en dehors du cadre professionnel strict, par curiosité et initiative. <br>
-				</p>
-			</div>
-			<div class="col-sm-4">
-			<h5><strong>Mon parcours professionnel<br></strong></h5>
-				<p>Je suis diplômé du Master Gestion et Conservation de la Biodiversité (UBO)
-					et de la Licence Pro Analyses et Techniques d'inventaires de la Biodiversité (UCBL).
-					Passé par PatriNat, j'ai contribué aux méthodes d'évaluation des états de conservation
-					d'habitats d'intérêt communautaire et au projet de cartographie national des milieux humides. <br>
-					Depuis 2024 chez ExEco Environnement, je porte les valeurs des sciences de la conservation
-					auprès de porteurs de projets. <br>
+    <div class="container">
 
-				</p>
-				<h5><strong>Retrouvez moi sur : <br></strong></h5>
-				<p><a href="http://linkedin.com/in/botcazoufrancois">LinkedIn</a> /
-					<a href="https://www.researchgate.net/profile/Francois-Botcazou">ResearchGate</a> /
-					<a href="https://github.com/Ki-Mor">Github</a> /
-					<a href="https://github.io/Ki-Mor/Portfolio">Portfolio personnel</a>
-				</p>
-			</div>
-		</div>
-	</div>
+        <h2 class="text-center title"><span
+                style="display: inline-block; width: 1em; height: 1em; border-radius: 50%; overflow: hidden; vertical-align: -0.15em; margin-right: 8px;"><img
+                src="assets/images/botcazou.jpg" alt="Icone"
+                style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.25);"></span>À propos de moi
+        </h2>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6">
+                            <div class="caption">
+                                <h3>Mon parcours</h3>
+                                <p>Je suis diplômé du Master Gestion et Conservation de la Biodiversité (UBO)
+                                    et de la Licence Pro Analyses et Techniques d'inventaires de la Biodiversité (UCBL).
+                                    Passé par PatriNat, j'ai contribué aux méthodes d'évaluation des états de
+                                    conservation d'habitats d'intérêt communautaire et au projet de cartographie
+                                    national des milieux humides. <br> Depuis 2024 chez ExEco Environnement, je porte
+                                    les valeurs des sciences de la conservation auprès de porteurs de projets.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-pull-6">
+                            <div class="caption">
+                                <h3>Qui je suis</h3>
+                                <p> François Botcazou, écologue-botaniste et géo-bricoleur,
+                                    artisan de petits programmes pour améliorer mon quotidien.
+                                    Ma maîtrise de Qgis s'est construite en parallèle de mon parcours
+                                    d’écologue-botaniste et en dehors du cadre professionnel strict,
+                                    par curiosité et initiative. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+
+            <h2 class="text-center title"><span
+                    style="display: inline-block; width: 1em; height: 1em; border-radius: 50%; overflow: hidden; vertical-align: -0.15em; margin-right: 8px;"><img
+                    src="assets/images/botcazou.jpg" alt="Icone"
+                    style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.25);"></span>À propos de moi
+            </h2>
+            <div class="col-sm-4 col-sm-offset-2">
+                <h5><strong>Qui suis-je ?<br></strong></h5>
+                <p>François Botcazou, écologue-botaniste et géo-bricoleur,
+                    artisan de petits programmes pour améliorer mon quotidien.
+                    Ma maîtrise de Qgis s'est construite en parallèle de mon parcours d’écologue-botaniste
+                    et en dehors du cadre professionnel strict, par curiosité et initiative. <br>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5><strong>Mon parcours professionnel<br></strong></h5>
+                <p>Je suis diplômé du Master Gestion et Conservation de la Biodiversité (UBO)
+                    et de la Licence Pro Analyses et Techniques d'inventaires de la Biodiversité (UCBL).
+                    Passé par PatriNat, j'ai contribué aux méthodes d'évaluation des états de conservation
+                    d'habitats d'intérêt communautaire et au projet de cartographie national des milieux humides. <br>
+                    Depuis 2024 chez ExEco Environnement, je porte les valeurs des sciences de la conservation
+                    auprès de porteurs de projets. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="text-center title">Contact</h2>
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <p class="lead">Vous avez une question ou une suggestion ?</p>
+                <p>Envoyez moi un courriel ou un message sur Linkedin</p>
+                <p><b>francois.botcazou@proton.me</b><br><br></p>
+                <ul class="list-inline list-social">
+                    <li><a href="https://www.researchgate.net/profile/Francois-Botcazou" class="btn btn-link"><i
+                            class="fa fa-flask fa-fw"></i> ResearchGate</a></li>
+                    <li><a href="https://github.com/Ki-Mor" class="btn btn-link"><i class="fa fa-github fa-fw"></i>
+                        Github</a></li>
+                    <li><a href="http://linkedin/in/botcazoufrancois" class="btn btn-link"><i
+                            class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+                    <li><a href="https://github.io/Ki-Mor/Portfolio" class="btn btn-link"><i
+                            class="fa fa-folder-open fa-fw"></i> Portfolio personnel</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
-<!-- Third (Works) section -->
+<!-- Third (Works) section
 <section class="section" id="themes">
 
-</section>
+</section> -->
 
-<!-- Fourth (Contact) section -->
+<!-- Fourth (Contact) section
 <section class="section" id="contact">
-	<div class="container">
-	
-		<h2 class="text-center title">Contact</h2>
+    <div class="container">
 
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2 text-center">
-				<p class="lead">Vous avez une question ou une suggestion ?</p>
-				<p>Envoyez moi un courriel ou un message sur Linkedin</p>
-				<p><b>francois.botcazou@proton.me</b><br><br></p>
-				<ul class="list-inline list-social">
-					<li><a href="https://www.researchgate.net/profile/Francois-Botcazou" class="btn btn-link"><i class="fa fa-flask fa-fw"></i> ResearchGate</a></li>
-					<li><a href="https://github.com/Ki-Mor" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
-					<li><a href="http://linkedin/in/botcazoufrancois" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
-					<li><a href="https://github.io/Ki-Mor/Portfolio" class="btn btn-link"><i class="fa fa-folder-open fa-fw"></i> Portfolio personnel</a></li>
-				</ul>
-			</div>
-		</div>
+        <h2 class="text-center title">Contact</h2>
 
-	</div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <p class="lead">Vous avez une question ou une suggestion ?</p>
+                <p>Envoyez moi un courriel ou un message sur Linkedin</p>
+                <p><b>francois.botcazou@proton.me</b><br><br></p>
+                <ul class="list-inline list-social">
+                    <li><a href="https://www.researchgate.net/profile/Francois-Botcazou" class="btn btn-link"><i
+                            class="fa fa-flask fa-fw"></i> ResearchGate</a></li>
+                    <li><a href="https://github.com/Ki-Mor" class="btn btn-link"><i class="fa fa-github fa-fw"></i>
+                        Github</a></li>
+                    <li><a href="http://linkedin/in/botcazoufrancois" class="btn btn-link"><i
+                            class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+                    <li><a href="https://github.io/Ki-Mor/Portfolio" class="btn btn-link"><i
+                            class="fa fa-folder-open fa-fw"></i> Portfolio personnel</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>  -->
+
+<!-- Fifth (Licence) section -->
+<section class="section" id="licence">
+    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+        <h2 class="text-center title">Licence</h2>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <div class="thumbnail">
+                    <p>Ce projet est sous licence GNU v3 GPL. <br>
+                        Vous pouvez le partager, l’adapter et l’utiliser à des fins non commerciales, en mentionnant
+                        l’auteur original.
+                    </p>
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.html#license-text" class="btn btn-default btn-lg"
+                       target="_blank" rel="noopener"><i class="fa fa-legal fa-fw"></i>Voir la licence GNU GPL v3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
-
 
 <!-- Load js libs only when the page is loaded. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
